@@ -1,0 +1,54 @@
+syntax = "proto3";
+package dolphin_protos;
+
+
+
+service DolphinOrg {
+    rpc Save (OrgModel) returns (ResOrgInfo) { }
+    rpc Browse (RepOrgSearch) returns (ResOrgInfo) { }
+    rpc View (RepOrgID) returns (ResOrgInfo) { }
+    rpc Remove (RepOrgID) returns (ResOrgRemove) { }
+}
+
+message RepOrgSearch  {
+    string keyword = 1;
+}
+
+message ResOrgInfo  {
+    int64 code = 1;
+    string msg = 2;
+    repeated OrgModel data_info = 3;
+}
+
+message ResOrgRemove  {
+    int64 code = 1;
+    string msg = 2;
+}
+
+message RepOrgID  {
+    int64 ID = 1;
+}
+
+
+//gen sql tablename = organization [des]
+message OrgModel  {
+
+    enum OrgStatus {
+        Open = 0;
+        Close = 1;
+        Remove = 2;
+    }
+
+    int64 ID = 1;    //`sql:"id" type:"int" len:"10" key:"PRIMARY"`
+    string Name = 2; //`sql:"name" type:"varchar" len:"50"
+    string Code = 3; //`sql:"code" type:"varchar" len:"50"
+    int64 Mold = 4; //`sql:"mold" type:"int" len:"10"
+    int64 PID = 5; //`sql:"pid" type:"int" len:"10"
+    int64 ManagerID = 6; //`sql:"manager_id" type:"int" len:"10"
+    string Phone = 7; //`sql:"phone" type:"varchar" len:"20"
+    string WebSite = 8;//`sql:"website" type:"varchar" len:"255"
+    string OperationArea = 9;//`sql:"operation_area" type:"varchar" len:"255"
+    bytes Logo = 10;//`sql:"logo" type:"varchar" len:"255"
+    OrgStatus Status = 11; //`sql:"status" type:"enum"
+}
+

@@ -1,0 +1,321 @@
+{
+  "Syntax": {
+    "ProtobufVersion": "proto3",
+    "Comments": null,
+    "InlineComment": null,
+    "Meta": {
+      "Pos": {
+        "Filename": "",
+        "Offset": 0,
+        "Line": 1,
+        "Column": 1
+      },
+      "LastPos": {
+        "Filename": "",
+        "Offset": 0,
+        "Line": 0,
+        "Column": 0
+      }
+    }
+  },
+  "ProtoBody": [
+    {
+      "Name": "filestream",
+      "Comments": null,
+      "InlineComment": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 19,
+          "Line": 2,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 0,
+          "Line": 0,
+          "Column": 0
+        }
+      }
+    },
+    {
+      "MessageName": "FileChunk",
+      "MessageBody": [
+        {
+          "IsRepeated": false,
+          "Type": "bytes",
+          "FieldName": "Content",
+          "FieldNumber": "1",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 64,
+              "Line": 5,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 40,
+          "Line": 4,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 83,
+          "Line": 6,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "EnumName": "FileUploadStatusCode",
+      "EnumBody": [
+        {
+          "Ident": "Unknown",
+          "Number": "0",
+          "EnumValueOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 118,
+              "Line": 9,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "Ident": "Ok",
+          "Number": "1",
+          "EnumValueOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 135,
+              "Line": 10,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "Ident": "Failed",
+          "Number": "2",
+          "EnumValueOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 147,
+              "Line": 11,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 86,
+          "Line": 8,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 159,
+          "Line": 12,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "MessageName": "FileUploadAck",
+      "MessageBody": [
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "Message",
+          "FieldNumber": "1",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 190,
+              "Line": 15,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "FileUploadStatusCode",
+          "FieldName": "Code",
+          "FieldNumber": "2",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 214,
+              "Line": 16,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 162,
+          "Line": 14,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 245,
+          "Line": 17,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "ServiceName": "gRPCStreamUploadService",
+      "ServiceBody": [
+        {
+          "RPCName": "SendFile",
+          "RPCRequest": {
+            "IsStream": true,
+            "MessageType": "FileChunk",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 298,
+                "Line": 20,
+                "Column": 17
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "RPCResponse": {
+            "IsStream": false,
+            "MessageType": "FileUploadAck",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 325,
+                "Line": 20,
+                "Column": 44
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "Options": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 286,
+              "Line": 20,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 342,
+              "Line": 20,
+              "Column": 61
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 248,
+          "Line": 19,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 344,
+          "Line": 21,
+          "Column": 1
+        }
+      }
+    }
+  ],
+  "Meta": {
+    "Filename": ""
+  }
+}

@@ -1,0 +1,1977 @@
+{
+  "Syntax": {
+    "ProtobufVersion": "proto3",
+    "Comments": null,
+    "InlineComment": null,
+    "Meta": {
+      "Pos": {
+        "Filename": "",
+        "Offset": 0,
+        "Line": 1,
+        "Column": 1
+      },
+      "LastPos": {
+        "Filename": "",
+        "Offset": 0,
+        "Line": 0,
+        "Column": 0
+      }
+    }
+  },
+  "ProtoBody": [
+    {
+      "Name": "datacenter",
+      "Comments": null,
+      "InlineComment": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 19,
+          "Line": 2,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 0,
+          "Line": 0,
+          "Column": 0
+        }
+      }
+    },
+    {
+      "EnumName": "EnumAllowingAlias",
+      "EnumBody": [
+        {
+          "OptionName": "allow_alias",
+          "Constant": "true",
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 70,
+              "Line": 6,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "Ident": "UNKNOWN",
+          "Number": "0",
+          "EnumValueOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 101,
+              "Line": 7,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "Ident": "STARTED",
+          "Number": "1",
+          "EnumValueOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 118,
+              "Line": 8,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "Ident": "RUNNING",
+          "Number": "2",
+          "EnumValueOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 135,
+              "Line": 9,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 41,
+          "Line": 5,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 148,
+          "Line": 10,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "MessageName": "outer",
+      "MessageBody": [
+        {
+          "MessageName": "inner",
+          "MessageBody": [
+            {
+              "IsRepeated": false,
+              "Type": "int64",
+              "FieldName": "ival",
+              "FieldNumber": "1",
+              "FieldOptions": null,
+              "Comments": null,
+              "InlineComment": null,
+              "Meta": {
+                "Pos": {
+                  "Filename": "",
+                  "Offset": 206,
+                  "Line": 13,
+                  "Column": 8
+                },
+                "LastPos": {
+                  "Filename": "",
+                  "Offset": 0,
+                  "Line": 0,
+                  "Column": 0
+                }
+              }
+            }
+          ],
+          "Comments": null,
+          "InlineComment": null,
+          "InlineCommentBehindLeftCurly": {
+            "Raw": "// Level 2",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 188,
+                "Line": 12,
+                "Column": 23
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 170,
+              "Line": 12,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 226,
+              "Line": 14,
+              "Column": 5
+            }
+          }
+        },
+        {
+          "IsRepeated": true,
+          "Type": "inner",
+          "FieldName": "inner_message",
+          "FieldNumber": "2",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 232,
+              "Line": 15,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "EnumAllowingAlias",
+          "FieldName": "enum_field",
+          "FieldNumber": "3",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 270,
+              "Line": 16,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "KeyType": "int32",
+          "Type": "string",
+          "MapName": "my_map",
+          "FieldNumber": "4",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 307,
+              "Line": 17,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 150,
+          "Line": 11,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 338,
+          "Line": 18,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "ServiceName": "AdverseEvent",
+      "ServiceBody": [
+        {
+          "RPCName": "Save",
+          "RPCRequest": {
+            "IsStream": false,
+            "MessageType": "AdverseEventModel",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 472,
+                "Line": 25,
+                "Column": 14
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "RPCResponse": {
+            "IsStream": false,
+            "MessageType": "ResAdverseEvent",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 500,
+                "Line": 25,
+                "Column": 42
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "Options": null,
+          "Comments": [
+            {
+              "Raw": "//TEST FELIX InlineCommentBehindLeftCurly",
+              "Meta": {
+                "Pos": {
+                  "Filename": "",
+                  "Offset": 390,
+                  "Line": 22,
+                  "Column": 1
+                },
+                "LastPos": {
+                  "Filename": "",
+                  "Offset": 0,
+                  "Line": 0,
+                  "Column": 0
+                }
+              }
+            },
+            {
+              "Raw": "//TEST FELIX Save OUT",
+              "Meta": {
+                "Pos": {
+                  "Filename": "",
+                  "Offset": 437,
+                  "Line": 24,
+                  "Column": 5
+                },
+                "LastPos": {
+                  "Filename": "",
+                  "Offset": 0,
+                  "Line": 0,
+                  "Column": 0
+                }
+              }
+            }
+          ],
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 463,
+              "Line": 25,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 553,
+              "Line": 27,
+              "Column": 5
+            }
+          }
+        },
+        {
+          "RPCName": "Search",
+          "RPCRequest": {
+            "IsStream": false,
+            "MessageType": "RepSearch",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 598,
+                "Line": 29,
+                "Column": 16
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "RPCResponse": {
+            "IsStream": false,
+            "MessageType": "ResSearch",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 618,
+                "Line": 29,
+                "Column": 36
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "Options": null,
+          "Comments": [
+            {
+              "Raw": "//TEST FELIX Search OUT",
+              "Meta": {
+                "Pos": {
+                  "Filename": "",
+                  "Offset": 559,
+                  "Line": 28,
+                  "Column": 5
+                },
+                "LastPos": {
+                  "Filename": "",
+                  "Offset": 0,
+                  "Line": 0,
+                  "Column": 0
+                }
+              }
+            }
+          ],
+          "InlineComment": {
+            "Raw": "//TEST FELIX Search R",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 633,
+                "Line": 29,
+                "Column": 51
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 587,
+              "Line": 29,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 631,
+              "Line": 29,
+              "Column": 49
+            }
+          }
+        },
+        {
+          "RPCName": "View",
+          "RPCRequest": {
+            "IsStream": false,
+            "MessageType": "RepAdverseEventView",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 668,
+                "Line": 30,
+                "Column": 14
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "RPCResponse": {
+            "IsStream": false,
+            "MessageType": "ResAdverseEvent",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 698,
+                "Line": 30,
+                "Column": 44
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "Options": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 659,
+              "Line": 30,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 717,
+              "Line": 30,
+              "Column": 63
+            }
+          }
+        }
+      ],
+      "Comments": [
+        {
+          "Raw": "//TEST FELIX AdverseEvent",
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 341,
+              "Line": 20,
+              "Column": 1
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 367,
+          "Line": 21,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 719,
+          "Line": 31,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "MessageName": "RepSearch",
+      "MessageBody": [
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "keyword",
+          "FieldNumber": "1",
+          "FieldOptions": null,
+          "Comments": [
+            {
+              "Raw": "//TEST Felix",
+              "Meta": {
+                "Pos": {
+                  "Filename": "",
+                  "Offset": 777,
+                  "Line": 34,
+                  "Column": 5
+                },
+                "LastPos": {
+                  "Filename": "",
+                  "Offset": 0,
+                  "Line": 0,
+                  "Column": 0
+                }
+              }
+            }
+          ],
+          "InlineComment": {
+            "Raw": "//TEST Felix string keyword",
+            "Meta": {
+              "Pos": {
+                "Filename": "",
+                "Offset": 815,
+                "Line": 35,
+                "Column": 26
+              },
+              "LastPos": {
+                "Filename": "",
+                "Offset": 0,
+                "Line": 0,
+                "Column": 0
+              }
+            }
+          },
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 794,
+              "Line": 35,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": [
+        {
+          "Raw": "//TEST Felix message RepSearch",
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 721,
+              "Line": 32,
+              "Column": 1
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 752,
+          "Line": 33,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 843,
+          "Line": 36,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "MessageName": "ResSearch",
+      "MessageBody": [
+        {
+          "IsRepeated": false,
+          "Type": "int64",
+          "FieldName": "code",
+          "FieldNumber": "1",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 923,
+              "Line": 43,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "msg",
+          "FieldNumber": "2",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 943,
+              "Line": 44,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": true,
+          "Type": "AdverseEventSearchModel",
+          "FieldName": "data_info",
+          "FieldNumber": "3",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 963,
+              "Line": 45,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": [
+        {
+          "Raw": "/*\nTest Felix ResSearch 1\nTest Felix ResSearch 2\n*/",
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 846,
+              "Line": 38,
+              "Column": 1
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 898,
+          "Line": 42,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 1011,
+          "Line": 46,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "MessageName": "RepAdverseEventView",
+      "MessageBody": [
+        {
+          "IsRepeated": false,
+          "Type": "int64",
+          "FieldName": "ID",
+          "FieldNumber": "1",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1049,
+              "Line": 49,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 1014,
+          "Line": 48,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 1063,
+          "Line": 50,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "MessageName": "AdverseEventSearchModel",
+      "MessageBody": [
+        {
+          "IsRepeated": false,
+          "Type": "int64",
+          "FieldName": "id",
+          "FieldNumber": "1",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1104,
+              "Line": 53,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "integration",
+          "FieldNumber": "2",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1122,
+              "Line": 54,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 1066,
+          "Line": 52,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 1146,
+          "Line": 55,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "MessageName": "AdverseEventModel",
+      "MessageBody": [
+        {
+          "IsRepeated": false,
+          "Type": "int64",
+          "FieldName": "id",
+          "FieldNumber": "1",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1182,
+              "Line": 58,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "domain_type",
+          "FieldNumber": "2",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1200,
+              "Line": 59,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "int64",
+          "FieldName": "domain_id",
+          "FieldNumber": "3",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1228,
+              "Line": 60,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "domain_name",
+          "FieldNumber": "4",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1253,
+              "Line": 61,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "domain_addresss",
+          "FieldNumber": "5",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1281,
+              "Line": 62,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "domain_createtime",
+          "FieldNumber": "6",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1313,
+              "Line": 63,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "patient_sex",
+          "FieldNumber": "7",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1347,
+              "Line": 64,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "patient_name",
+          "FieldNumber": "8",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1375,
+              "Line": 65,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "patient_age",
+          "FieldNumber": "9",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1404,
+              "Line": 66,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "patient_type",
+          "FieldNumber": "10",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1432,
+              "Line": 67,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "patient_state",
+          "FieldNumber": "11",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1462,
+              "Line": 68,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_place_type",
+          "FieldNumber": "12",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1493,
+              "Line": 69,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_place",
+          "FieldNumber": "13",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1527,
+              "Line": 70,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_time",
+          "FieldNumber": "14",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1556,
+              "Line": 71,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_scene",
+          "FieldNumber": "15",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1584,
+              "Line": 72,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_type",
+          "FieldNumber": "16",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1613,
+              "Line": 73,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_memo",
+          "FieldNumber": "17",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1641,
+              "Line": 74,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "symptom",
+          "FieldNumber": "18",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1669,
+              "Line": 75,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "dispose",
+          "FieldNumber": "19",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1694,
+              "Line": 76,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "dispose_worker_type",
+          "FieldNumber": "20",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1719,
+              "Line": 77,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "dispose_worker_title",
+          "FieldNumber": "21",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1756,
+              "Line": 78,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "dispose_worker_age",
+          "FieldNumber": "22",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1794,
+              "Line": 79,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "dispose_worker_name",
+          "FieldNumber": "23",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1830,
+              "Line": 80,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "dispose_worker_sex",
+          "FieldNumber": "24",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1867,
+              "Line": 81,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_lv",
+          "FieldNumber": "25",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1903,
+              "Line": 82,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_result",
+          "FieldNumber": "26",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1929,
+              "Line": 83,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_reason",
+          "FieldNumber": "27",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1959,
+              "Line": 84,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "event_reason_memo",
+          "FieldNumber": "28",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 1989,
+              "Line": 85,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "follow_upl",
+          "FieldNumber": "29",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2024,
+              "Line": 86,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "qc_user_name",
+          "FieldNumber": "30",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2052,
+              "Line": 87,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "qc_user_age",
+          "FieldNumber": "31",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2082,
+              "Line": 88,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "qc_user_sex",
+          "FieldNumber": "32",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2111,
+              "Line": 89,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "qc_user_type",
+          "FieldNumber": "33",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2140,
+              "Line": 90,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "qc_user_title",
+          "FieldNumber": "34",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2170,
+              "Line": 91,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "preventive",
+          "FieldNumber": "35",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2201,
+              "Line": 92,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "preventive_manager",
+          "FieldNumber": "36",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2229,
+              "Line": 93,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "accident_liability",
+          "FieldNumber": "37",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2265,
+              "Line": 94,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "preventive_manage_post",
+          "FieldNumber": "38",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2301,
+              "Line": 95,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "preventive_manage_age",
+          "FieldNumber": "39",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2341,
+              "Line": 96,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "preventive_manage_sex",
+          "FieldNumber": "40",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2380,
+              "Line": 97,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "preventive_manage_title",
+          "FieldNumber": "41",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2419,
+              "Line": 98,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "patient_state_memo",
+          "FieldNumber": "42",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2460,
+              "Line": 99,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 1149,
+          "Line": 57,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 2492,
+          "Line": 100,
+          "Column": 1
+        }
+      }
+    },
+    {
+      "MessageName": "ResAdverseEvent",
+      "MessageBody": [
+        {
+          "IsRepeated": false,
+          "Type": "int32",
+          "FieldName": "code",
+          "FieldNumber": "1",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2525,
+              "Line": 103,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": false,
+          "Type": "string",
+          "FieldName": "msg",
+          "FieldNumber": "2",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2545,
+              "Line": 104,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        },
+        {
+          "IsRepeated": true,
+          "Type": "AdverseEventModel",
+          "FieldName": "data_info",
+          "FieldNumber": "3",
+          "FieldOptions": null,
+          "Comments": null,
+          "InlineComment": null,
+          "Meta": {
+            "Pos": {
+              "Filename": "",
+              "Offset": 2565,
+              "Line": 105,
+              "Column": 5
+            },
+            "LastPos": {
+              "Filename": "",
+              "Offset": 0,
+              "Line": 0,
+              "Column": 0
+            }
+          }
+        }
+      ],
+      "Comments": null,
+      "InlineComment": null,
+      "InlineCommentBehindLeftCurly": null,
+      "Meta": {
+        "Pos": {
+          "Filename": "",
+          "Offset": 2495,
+          "Line": 102,
+          "Column": 1
+        },
+        "LastPos": {
+          "Filename": "",
+          "Offset": 2607,
+          "Line": 106,
+          "Column": 1
+        }
+      }
+    }
+  ],
+  "Meta": {
+    "Filename": ""
+  }
+}
